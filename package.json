@@ -1,0 +1,33 @@
+{
+  "name": "oTracker",
+  "version": "0.0.1",
+  "description": "Everything (object) tracking system",
+  "main": "lib/tracker.js",
+  "dependencies": {
+    "lokijs": "^1.5.0",
+    "sql.js": "^0.4.0",
+    "sqlite3": "^3.1.11"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "lodash": "^4.17.4"
+  },
+  "scripts": {},
+  "bin": {},
+  "keywords": [
+    "GPS",
+    "Commerce",
+    "SMS",
+    "GoogleMap"
+  ],
+  "homepage": "https://github.com/ccckmit/otracker",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ccckmit/otracker.git"
+  },
+  "author": {
+    "name": "Chung-Chen Chen",
+    "email": "ccckmit@gmail.com"
+  },
+  "license": "MIT"
+}
