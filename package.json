@@ -1,5 +1,5 @@
 {
-  "name": "oTracker",
+  "name": "AllTracking",
   "version": "0.0.1",
   "description": "Everything (object) tracking system",
   "main": "lib/tracker.js",
@@ -20,10 +20,10 @@
     "SMS",
     "GoogleMap"
   ],
-  "homepage": "https://github.com/ccckmit/otracker",
+  "homepage": "https://github.com/ccckmit/alltracking",
   "repository": {
     "type": "git",
-    "url": "http://github.com/ccckmit/otracker.git"
+    "url": "http://github.com/ccckmit/alltracking.git"
   },
   "author": {
     "name": "Chung-Chen Chen",
