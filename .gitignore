@@ -12,6 +12,12 @@ bak
 # node 
 node_modules
 
+# out
+out
+
+# .vscode
+.vscode
+
 # database
 db
 
