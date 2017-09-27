@@ -1,4 +1,4 @@
-var model = require('./model')
+var model = require('../lib/model')
 var view = require('./view')
 // var objManager: require('./objManager'),
 

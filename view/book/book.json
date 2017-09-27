@@ -1,0 +1,8 @@
+{
+    "title": "BookWorld",
+    "parts": [
+       {"title": "書的世界", "link": "/book/home.md"},
+       {"title": "萬物追蹤", "link": "/tracker/home.md"}
+    ]
+}
+  

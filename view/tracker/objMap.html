@@ -1,0 +1,70 @@
+<style>
+/* Always set the map height explicitly to define the size of the div
+  * element that contains the map. */
+#map {
+  height: 100%;
+}
+</style>
+<div id="map"></div>
+<script>
+
+  function initMap() {
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+//    var map = new google.maps.Map(document.querySelector('body'), {
+      mapTypeControl: true,
+      mapTypeControlOptions: {
+        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+        position: google.maps.ControlPosition.TOP_CENTER
+      },
+      fullscreenControl: true,
+      fullscreenControlOptions: {
+        position: google.maps.ControlPosition.RIGHT_CENTER
+      },
+      zoom: 13,
+      center: {lat: 24.450606, lng: 118.330145}
+    });
+
+    // Create an array of alphabetical characters used to label the markers.
+    var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+    // Add some markers to the map.
+    // Note: The code uses the JavaScript Array.prototype.map() method to
+    // create an array of markers based on a given "locations" array.
+    // The map() method here has nothing to do with the Google Maps API.
+    var markers = locations.map(function(location, i) {
+      return new google.maps.Marker({
+        position: location,
+        label: labels[i % labels.length]
+      });
+    });
+
+    // Add a marker clusterer to manage the markers.
+    var markerCluster = new MarkerClusterer(map, markers,
+        {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+  }
+  var locations = [
+    {lat: 24.450606, lng: 118.330145},
+    {lat: 24.350606, lng: 118.230145},
+    {lat: 24.350606, lng: 118.330145},
+    {lat: 24.550606, lng: 118.330145},
+    {lat: 24.450606, lng: 118.330145},
+    {lat: 24.450606, lng: 118.330145},
+    {lat: 24.451606, lng: 118.330145},
+    {lat: 24.452606, lng: 118.330145},
+    {lat: 24.453606, lng: 118.330145},
+    {lat: 24.454606, lng: 118.330145},
+    {lat: 24.455606, lng: 118.330145},
+    {lat: 24.450606, lng: 118.330145},
+    {lat: 24.451606, lng: 118.330145},
+    {lat: 24.452606, lng: 118.331145},
+    {lat: 24.453606, lng: 118.332145},
+    {lat: 24.454606, lng: 118.333145},
+    {lat: 24.455606, lng: 118.334145},
+  ]
+</script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7q1j5qhyIKSzRs_86eNfKH-_HsGiRPH8&callback=initMap">
+</script>

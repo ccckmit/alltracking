@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-expressions */
 var expect = require('chai').expect
-var tracker = require('../lib/tracker') // 全域變數，方便測試。
+var tracker = require('./tracker') // 全域變數，方便測試。
 
 var tester = module.exports = {}
 var view
