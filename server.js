@@ -66,7 +66,8 @@ router
 .get('/auth/facebook/callback',
   passport.authenticate('facebook', {
     successRedirect: '/user/success.md',
-    failureRedirect: '/user/fail.md'
+    failureRedirect: '/user/fail.md',
+    failureMessage: 'Invalid username or password'
   })
 )
 .get('/:book/:file', view.viewBookFile)
